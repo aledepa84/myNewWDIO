@@ -6,10 +6,7 @@ const Page = require('./page');
  * sub page containing specific selectors and methods for a specific page
  */
 class InventoryListPage extends Page {
-    constructor() {
-        super('.inventory_details');
-      }
-    
+
        get title() {
         return $('.inventory_details_name');
       }
@@ -33,6 +30,8 @@ class InventoryListPage extends Page {
        get goBackButton() {
         return $('.inventory_details_back_button');
       }
+
+      
     
       /**
        * Get the text of the swag swag

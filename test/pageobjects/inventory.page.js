@@ -20,6 +20,18 @@ class InventoryPage extends Page {
     get pageWrapper(){
         return $('#page_wrapper');
     }
+
+    get inventoryItem(){
+        return $$('[data-test="inventory-item"]');
+    }
+
+    get addButton(){
+        return $$('.btn_primary.btn_inventory');
+    }
+
+    async addToCart() {
+        await this.addButton.click();
+      }
 }
 
 module.exports = new InventoryPage();

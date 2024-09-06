@@ -28,7 +28,3 @@ describe('My Login application', () => {
     
 
 });
-
-
-///html/body/div/div/div/div[1]/div[1]/div[1]
-////*[@id="menu_button_container"]
